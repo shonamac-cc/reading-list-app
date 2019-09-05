@@ -26,9 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
 
+  const deleteButtonDiv = document.querySelector('#delete-button');
+
   const button = document.createElement('button');
   const text = document.createTextNode('Delete All');
   button.appendChild(text);
-  readingList.appendChild(button);
+  deleteButtonDiv.appendChild(button);
   button.addEventListener('click', handleDeleteAll);
 })
