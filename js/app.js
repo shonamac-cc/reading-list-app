@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   const handleDeleteAll = function (event) {
-    console.log('I\'m listening');
+    // console.log('I\'m listening');
     while (readingList.hasChildNodes()){
       readingList.removeChild(readingList.firstChild);
     }
